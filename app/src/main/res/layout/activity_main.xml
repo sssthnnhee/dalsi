@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:textSize="20dp"
+            android:textAppearance="@style/text1"
+            android:text="문의하기">
+
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="157dp"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="110dp"
+        android:textAppearance="@style/text1"
+        android:gravity="top"
+        android:text="답변받으실 이메일"
+        />
+
+    <EditText
+        android:id="@+id/sample_EditText"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="148dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint = "#000000"
+        android:textSize="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="email@example.com" />
+
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="157dp"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="233dp"
+        android:text="문의 유형"
+        android:textAppearance="@style/text2"
+        android:gravity="top"
+        />
+
+    <EditText
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="285dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint = "#000000"
+        android:textSize="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="카테고리 선택"
+        />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="157dp"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="350dp"
+        android:gravity="top"
+        android:text="문의 내용"
+        android:textAppearance="@style/text3" />
+
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="390dp"
+        android:layout_weight="1"
+        android:background="@drawable/rectangle1"
+        android:ems="10"
+        android:hint="내용을 입력하세요."
+        android:gravity="top"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:textAppearance="@style/text4"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="640dp"
+        android:background="@drawable/rectangle2"
+        android:gravity="center"
+        android:text="문의하기" />
+
+
+</RelativeLayout>

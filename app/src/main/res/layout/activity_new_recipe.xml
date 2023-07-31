@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="110dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ds" />
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:textSize="20dp"
+        android:textAppearance="@style/text1"
+        android:text="신메뉴 등록">
+
+    </TextView>
+</androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/menu_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@color/material_dynamic_neutral90"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:onClick="onClick"
+        android:src="@drawable/image_border"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <Button
+        android:id="@+id/btn_uploadPic"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@color/color_button"
+        android:onClick="onClick"
+        android:text="사진 선택"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@color/color_button"
+        android:onClick="onClick"
+        android:text="삭제하기"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=" 카페명"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <EditText
+        android:id="@+id/menuCafe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="55dp"
+        android:ems="10"
+        android:hint="코소카페"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=" 음료명"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <EditText
+        android:id="@+id/menuName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="55dp"
+        android:ems="10"
+        android:hint="밀크티쉐이크"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuCafe" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=" 가격"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="315dp" />
+
+    <EditText
+        android:id="@+id/menuPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="55dp"
+        android:ems="10"
+        android:hint="4000원"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuName" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=" 사진 업로드"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <TextView
+    android:layout_width="268dp"
+    android:layout_height="50dp"
+    android:background="@drawable/rectangle2"
+    android:gravity="center"
+    android:text="등록 요청하기"
+    android:textAppearance="@style/text4"
+    tools:layout_editor_absoluteX="71dp"
+    tools:layout_editor_absoluteY="600dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

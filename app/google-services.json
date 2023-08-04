@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "523742844756",
+    "project_id": "dalsi-menu-realtime",
+    "storage_bucket": "dalsi-menu-realtime.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523742844756:android:a72bf93415ed19ecb61ac1",
+        "android_client_info": {
+          "package_name": "com.example.project2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523742844756-2pv8ta2p0e72upsmfj29esp2oa6ka2q2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-uxY9P9C9B9px_x2rB7Edzz-obLvCN3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523742844756-2pv8ta2p0e72upsmfj29esp2oa6ka2q2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
